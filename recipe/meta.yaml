@@ -1,4 +1,4 @@
-{% set version = "2.3.25" %}
+{% set version = "2.3.26" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcompanion_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcompanion/rcompanion_{{ version }}.tar.gz
-  sha256: faef2f469cd73a3258ece49cedfe5f429941ca6fefdd931f4e04291082bea283
+  sha256: 0dc614e90e407ce20a894dba6e88dc0f4f2980e974574940d6c34d006ecd82c5
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -52,12 +52,10 @@ test:
 about:
   home: http://rcompanion.org/
   license: GPL-3
-  summary: Functions and datasets to support "Summary and Analysis of Extension Program Evaluation
-    in R" and "An R Companion for the Handbook of Biological Statistics". Vignettes
-    are available at <http://rcompanion.org>.
+  summary: Functions and datasets to support "Summary and Analysis of Extension Program Evaluation in R" and "An R Companion for the Handbook of Biological Statistics". Vignettes are available at <http://rcompanion.org>.
   license_family: GPL3
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
