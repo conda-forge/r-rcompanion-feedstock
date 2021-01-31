@@ -51,7 +51,7 @@ test:
 
 about:
   home: http://rcompanion.org/
-  license: GPL-3
+  license: GPL-3.0-only
   summary: Functions and datasets to support "Summary and Analysis of Extension Program Evaluation in R" and "An R Companion for the Handbook of Biological Statistics". Vignettes are available at <http://rcompanion.org>.
   license_family: GPL3
   license_file:
