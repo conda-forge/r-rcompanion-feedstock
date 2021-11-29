@@ -16,6 +16,7 @@ build:
   merge_build_host: true  # [win]
   number: 0
   noarch: generic
+  skip: true  # [r_base == "4.0"]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -23,26 +24,25 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
-    - r-desctools >=0.99.17
-    - r-emt >=1.1
-    - r-boot >=1.3_18
-    - r-coin >=1.1_2
-    - r-lmtest >=0.9_34
-    - r-multcompview >=0.1_7
+    - r-desctools >=0.99.43
+    - r-boot >=1.3_28
+    - r-coin >=1.4_2
+    - r-lmtest >=0.9_38
+    - r-multcompview >=0.1_8
     - r-nortest >=1.0_4
-    - r-plyr >=1.8.4
+    - r-plyr >=1.8.6
   run:
     - r-base
-    - r-desctools >=0.99.17
-    - r-emt >=1.1
-    - r-boot >=1.3_18
-    - r-coin >=1.1_2
-    - r-lmtest >=0.9_34
-    - r-multcompview >=0.1_7
+    - r-desctools >=0.99.43
+    - r-boot >=1.3_28
+    - r-coin >=1.4_2
+    - r-lmtest >=0.9_38
+    - r-multcompview >=0.1_8
     - r-nortest >=1.0_4
-    - r-plyr >=1.8.4
+    - r-plyr >=1.8.6
 
 test:
   commands:
