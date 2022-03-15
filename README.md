@@ -5,7 +5,7 @@ Home: http://rcompanion.org/
 
 Package license: GPL-3.0-only
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcompanion-feedstock/blob/master/LICENSE.txt)
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rcompanion-feedstock/blob/main/LICENSE.txt)
 
 Summary: Functions and datasets to support "Summary and Analysis of Extension Program Evaluation in R" and "An R Companion for the Handbook of Biological Statistics". Vignettes are available at <http://rcompanion.org>.
 
@@ -15,8 +15,8 @@ Current build status
 
 <table><tr><td>All platforms:</td>
     <td>
-      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7455&branchName=master">
-        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcompanion-feedstock?branchName=master">
+      <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=7455&branchName=main">
+        <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-rcompanion-feedstock?branchName=main">
       </a>
     </td>
   </tr>
