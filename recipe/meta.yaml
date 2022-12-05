@@ -1,4 +1,4 @@
-{% set version = "2.4.16" %}
+{% set version = "2.4.18" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcompanion_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcompanion/rcompanion_{{ version }}.tar.gz
-  sha256: f4d2f628e44c7c0b19105b5a5f97c78bd88c4fe579eb34dd6696ee6d69469227
+  sha256: 8b5f8a10f31dee31386ee1f99f3c8b6ceadab8e290f56bcba4d37bd6c48ace3a
 
 build:
   merge_build_host: true  # [win]
