@@ -23,7 +23,7 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base >=4.4
+    - r-base
     - r-desctools >=0.99.58
     - r-boot >=1.3_30
     - r-coin >=1.4_3
@@ -32,7 +32,7 @@ requirements:
     - r-nortest >=1.0_4
     - r-plyr >=1.8.9
   run:
-    - r-base >=4.4
+    - r-base
     - r-desctools >=0.99.58
     - r-boot >=1.3_30
     - r-coin >=1.4_3
