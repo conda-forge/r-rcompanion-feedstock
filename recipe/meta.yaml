@@ -23,23 +23,23 @@ requirements:
     - {{ posix }}zip               # [win]
     - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
-    - r-base >=4.4
-    - r-desctools >=0.99.58
-    - r-boot >=1.3_30
-    - r-coin >=1.4_3
-    - r-lmtest >=0.9_40
-    - r-multcompview >=0.1_10
-    - r-nortest >=1.0_4
-    - r-plyr >=1.8.9
+    - r-base
+    - r-desctools
+    - r-boot
+    - r-coin
+    - r-lmtest
+    - r-multcompview
+    - r-nortest
+    - r-plyr
   run:
-    - r-base >=4.4
-    - r-desctools >=0.99.58
-    - r-boot >=1.3_30
-    - r-coin >=1.4_3
-    - r-lmtest >=0.9_40
-    - r-multcompview >=0.1_10
-    - r-nortest >=1.0_4
-    - r-plyr >=1.8.9
+    - r-base
+    - r-desctools
+    - r-boot
+    - r-coin
+    - r-lmtest
+    - r-multcompview
+    - r-nortest
+    - r-plyr
 
 test:
   commands:
