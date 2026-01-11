@@ -1,4 +1,4 @@
-{% set version = "2.5.1" %}
+{% set version = "2.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rcompanion_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rcompanion/rcompanion_{{ version }}.tar.gz
-  sha256: 10a0fcf2929de7475f478119215101b66451fad0e779db3b0dd95e2023fcaacc
+  sha256: 25c9ab6b9f845f190437cdda0f5fa6d2ce664ddadd53b328728716f9fbb875cb
 
 build:
   number: 0
